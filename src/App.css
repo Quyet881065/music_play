@@ -1,0 +1,26 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* @layer : nhóm các custom CSS vào các layer */
+@layer {
+    .animate-spin-slow {
+        animation: spin 7s linear infinite;
+    }
+
+    .pause {
+        animation-play-state: paused;
+    }
+    .rotate-vertical {
+        transform: rotate(-90deg);
+        /* thêm nếu cần */
+        transform-origin: center;
+    }
+
+}
