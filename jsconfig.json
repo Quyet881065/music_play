@@ -1,0 +1,9 @@
+// file giup rút ngắn và chuẩn hoá đường dẫn import trong dự án 
+{
+    "compilerOptions":{ // Chứa toàn bộ tuỳ chọn cấu hình 
+        "baseUrl": "." ,// Xác định thư mục gốc để JS tìm file khi bạn import . thư mục chứa file jsconfig.json
+        "paths" : {    // Cho phép tạo alias (bí danh) cho đường dẫn.
+            "@/*" : ["./src/*"] // @/ đại diện cho thư mục ./src/ . * giữ nguyên phần còn lại của đường dẫn 
+        }
+    }
+}
